@@ -1,0 +1,75 @@
+
+::ng-deep {
+   /* .scroll-bar {
+      background-color: transparent !important;
+      border-radius: 1px;
+    }
+    .scroll-thumbs {
+      background-color: #919193 !important;
+      &:hover,
+      &:active {
+        background-color: #919193 !important;
+      }
+    }*/
+    .scroll-bar.ng-scrollbar-vertical {
+        width: 6px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      .ng-scrollbar-view {
+        /*padding-right: 8px;*/
+      }
+
+  }
+
+
+
+
+
+.navigation-container {
+    width: 340px;
+    height: calc(100vh - 89px);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: 0.25s;
+    -webkit-transition: 0.25s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1275px) {
+
+    .navigation-show {
+        right: 0px !important;
+    }
+
+    .navigation-container {
+        z-index: 9999;
+        right: 340px;
+        background-color: white;
+        width:340px;
+    } 
+
+}
+
+
+
+@media only screen and (max-width: 810px) {
+
+               
+    .navigation-container {
+        width: 100%;
+        min-width: 320px;
+        right: calc(100% + 20px);
+        height: calc(100vh - 119px);
+    }
+
+    
+
+}
+
+

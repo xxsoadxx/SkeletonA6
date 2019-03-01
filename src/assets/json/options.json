@@ -1,0 +1,166 @@
+{
+    "monedas":[
+        {"Val": "UYU" ,"Desc":"UYU"}, 
+        {"Val": "USD" ,"Desc":"USD"}, 
+        {"Val": "UI" ,"Desc":"UI"}
+    ],
+    "monedasLong":[
+        {"Val": "UYU" ,"Desc":"Pesos Uruguayos"}, 
+        {"Val": "USD" ,"Desc":"Dólares Americanos"}, 
+        {"Val": "UI" ,"Desc":"Unidades Indexadas"}
+    ],
+    "paises":[
+        {"Val":"1","Desc":"Uruguay"}
+    ],
+    "departamentos":{
+        "Uruguay": [
+            {"Val":"1","Desc":"Artigas"},
+            {"Val":"2","Desc":"Canelones"},
+            {"Val":"3","Desc":"Cerro Largo"},
+            {"Val":"4","Desc":"Colonia"},
+            {"Val":"5","Desc":"Durazno"},
+            {"Val":"6","Desc":"Flores"},
+            {"Val":"7","Desc":"Florida"},
+            {"Val":"8","Desc":"Lavalleja"},
+            {"Val":"9","Desc":"Maldonado"},
+            {"Val":"10","Desc":"Montevideo"},
+            {"Val":"11","Desc":"Paysandú"},
+            {"Val":"12","Desc":"Rio Negro"},
+            {"Val":"13","Desc":"Rivera"},
+            {"Val":"14","Desc":"Rocha"},
+            {"Val":"15","Desc":"Salto"},
+            {"Val":"16","Desc":"San José"},
+            {"Val":"17","Desc":"Soriano"},
+            {"Val":"18","Desc":"Tacuarembó"},
+            {"Val":"19","Desc":"Treinta y Tres"}
+        ]
+    },
+    "localidades": {
+        "Artigas" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Canelones" : [
+            {"Val":"1", "Desc": "Solymar"},
+            {"Val":"2", "Desc": "Lagomar"},
+            {"Val":"3", "Desc": "El Pinar"},
+            {"Val":"4", "Desc": "Atlántida"},
+            {"Val":"5", "Desc": "Las Toscas"},
+            {"Val":"6", "Desc": "Las Piedras"},
+            {"Val":"7", "Desc": "La Paz"},
+            {"Val":"8", "Desc": "Pando"},
+            {"Val":"9", "Desc": "Santa Lucía"},
+            {"Val":"10", "Desc": "Progreso"},
+            {"Val":"11", "Desc": "Barros Blancos"},
+            {"Val":"12", "Desc": "Colonia Nicolich"},
+            {"Val":"13", "Desc": "Joaquín Suárez"},
+            {"Val":"14", "Desc": "Paso Carrasco"},
+            {"Val":"15", "Desc": "Sauce"},
+            {"Val":"16", "Desc": "Tala"},
+            {"Val":"17", "Desc": "Cerrillos"},
+            {"Val":"18", "Desc": "Empalme Olmos"},
+            {"Val":"19", "Desc": "La Floresta"} 
+        ],
+        "Cerro Largo" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Colonia" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Durazno" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Flores" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Florida" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Lavalleja" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Maldonado" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Montevideo" : [
+            {"Val":"1", "Desc": "Montevideo"}
+        ],
+        "Paysandú" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Rio Negro" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Rivera" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Rocha" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Salto" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "San José" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Soriano" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Tacuarembó" : [
+            {"Val":"1", "Desc": "Otro"}
+        ],
+        "Treinta y Tres" : [
+            {"Val":"1", "Desc": "Otro"}
+        ]
+    },
+    "marcasdeAuto": [
+        {"Val": "1" ,"Desc":"Chevrolet"}
+    ],
+    "tiposdeCliente": [
+        {"id":1, "bigText":"Soy cliente", "class": ""},
+        {"id":2, "bigText":"Soy cliente Premier", "class": "premier"},
+        {"id":3, "bigText":"No soy cliente", "class":""}
+    ],
+    "tiposdePrestamo": [
+        {"id": 1, "name": "Personal", "desc": "Préstamo Personal", "img":"assets/img/personal.svg", "imghover":"assets/img/personalhover.svg"},
+        {"id": 2, "name": "Automotor", "desc": "Préstamo Automotor", "img":"assets/img/automotor.svg", "imghover":"assets/img/automotorhover.svg"},
+        {"id": 3, "name": "Hipotecario", "desc": "Préstamo Hipotecario", "img":"assets/img/hipotecario.svg", "imghover":"assets/img/hipotecariohover.svg"}
+    ],
+    "tiposdeDocumento": {
+        "Uruguay": [
+            {"Val":"1","Desc":"Cédula"}
+        ]
+    },
+    "ciudadania": {
+        "Uruguay": [
+            {"Val":"1","Desc":"Uruguayo/a"}
+        ]
+    },
+    "estadoCivil" : [
+        {"Val": "S" ,"Desc":"Soltero"},
+        {"Val": "C" ,"Desc":"Casado"},
+        {"Val": "K" ,"Desc":"Concubino"},
+        {"Val": "V" ,"Desc":"Viudo"},
+        {"Val": "D" ,"Desc":"Divorciado"}
+    ],
+    "genero":[
+        {"Val": "F" ,"Desc":"Femenino"},
+        {"Val": "M" ,"Desc":"Masculino"}
+    ],
+    "ocupacion": [
+        {"Val": "1" ,"Desc":"Empleado"}
+    ],
+    "situacionLaboral" : [
+        {"Val": "1" , "Desc": "Empleado"},
+        {"Val": "2" , "Desc": "Independiente"},
+        {"Val": "3" , "Desc": "Desempleado"},
+        {"Val": "4" , "Desc": "Jubilado o Pensionista"},
+        {"Val": "5" , "Desc": "Amo/a de casa"}
+    ],
+    "rol": [
+        {"Val": "1" ,"Desc":"Bantotal"}
+    ],
+    "actividad": [
+        {"Val":"1","Desc":"Actividad"}
+    ]
+
+}

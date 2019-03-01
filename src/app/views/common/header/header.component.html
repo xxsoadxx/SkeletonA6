@@ -1,0 +1,39 @@
+<div class="main-header">
+
+    <div class="ham-menu">
+        <div id="nav-icon3" [ngClass]="{'open': ScopeService.scope.showMenu}" tabindex="0" (click)="showMenu()" class="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <img class="logo" src="assets/img/logo.svg" />
+   <!-- {{  scope.loading }}-->
+    <h1 class="title"> {{ FormTitle }} </h1>
+
+    <div class="right-side">
+        <div class="user-icon-full">
+                {{ user.substring(0, 1).toUpperCase() }}  
+        </div>
+        <p class="user" >{{ user }}</p>
+        <div class="salir" (click)="logoff()">
+            <img src="assets/img/logout.svg" />
+        </div>
+
+        <img class="options" (click)="openUserMenu()" src="assets/img/menu.svg" />
+    </div>
+
+    <div class="right-menu" tabindex="0" #menubox [hidden]="!userMenu" (blur)="closeUserMenu()" >
+        <div>
+            <div class="user-icon">
+                {{ user.substring(0, 1).toUpperCase() }}
+            </div>
+    
+            <p class="user-text">{{ user }}</p>
+        </div>
+
+        <div class="user-button" (click)="logoff();"> <span>Salir</span> <img src="assets/img/logout_black.svg" /> </div>
+    </div>
+</div>

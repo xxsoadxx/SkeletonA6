@@ -1,0 +1,17 @@
+/*
+ * Global application theme.
+ * Framework overrides and customization goes here.
+ */
+
+
+@font-face {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nunito Sans Light'), url(assets/fonts/NunitoSans-Light.ttf) format('truetype');
+}
+  
+
+*{
+    font-family: Nunito Sans;
+}

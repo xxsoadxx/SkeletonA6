@@ -1,0 +1,36 @@
+
+<div class="login-container">
+    <img class="logo" src="assets/img/logo_black.png" />
+    <form [formGroup]="viewForm" >
+        <div class="login-box"> 
+            <div>
+                <div>
+                    <h1>Bienvenido/a </h1>
+                    <p>Complete la información solicitada para ingresar </p>
+                </div>
+                <div>   
+                       
+                        <input id="input" name="user"  class="msgInput mui-form-control" autocomplete="off" type="text" required (keydown.enter)="continuar()"
+                        onkeyup="this.setAttribute('value', this.value);" value="" formControlName="User" />
+                        <p class="label-effect"> Usuario </p>
+                        <div class="redline-focus1"></div>
+                        <div class="redline-focus2"></div>
+                        
+                </div>
+                <div>
+                        <input id="input" name="clave"  class="msgInput mui-form-control" autocomplete="off" type="password" required (keydown.enter)="continuar()"
+                        onkeyup="this.setAttribute('value', this.value);" value="" formControlName="Password" />
+                        <p class="label-effect"> Clave </p>
+                        <div class="redline-focus1"></div>
+                        <div class="redline-focus2"></div>
+                </div>
+                <div>
+                    <button type="button" (click)="continuar()">Ingresar</button>
+                    <div class="lds-dual-ring login-loading" *ngIf="ScopeService.scope.loading"></div>
+                </div>
+            </div>
+        
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,30 @@
+
+<div class="container-flow" [ngClass]="{'login-img': !ScopeService.scope.authenticated, 'blur': ScopeService.scope.blur}">
+    <app-header *ngIf="ScopeService.scope.authenticated" [FormTitle]="ScopeService.scope.FormTitle"></app-header>
+    <app-navigation *ngIf="ScopeService.scope.authenticated"></app-navigation>
+    <div class="main-container" [ngClass]="{'full-container': !ScopeService.scope.authenticated , 'main-container': ScopeService.scope.authenticated}">
+        <router-outlet></router-outlet>
+    </div> 
+
+    <div class="alert-container">
+        <div *ngFor="let alert of ScopeService.scope.alerts" [ngClass]="{'message-error':alert.severity === 'E','message-warn':alert.severity === 'W','message-success':alert.severity === 'S'}" class="backendmessage" (click)="remove(alert)" [ngInit]="removeTimeout" [ngInitParm]="alert">
+            <p> {{ alert.message }}</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="popUpCont" *ngIf="ScopeService.scope.rechaza">
+    <h1 class="title">Motivo por el que descarta la solicitud</h1>
+    <div class="inputArea">
+        <textarea class="motivo" type="text" [(ngModel)]="ScopeService.scope.razonRechazo"></textarea>
+    </div>
+    <div class="row">
+        <div class="col-12 remove-padding">
+            <div class="popButtonCont">
+                <button class="red pull-right" (click)="confirmaRechazo(true)">Descartar</button>
+                <button class="gray pull-left" (click)="confirmaRechazo(false)">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

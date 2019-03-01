@@ -1,0 +1,17 @@
+<div class="comboCont" [ngClass]="{disabled: disabled, readonly: readonly}" #container>
+    <input class="hiddenInput" type="checkbox" tabindex="0" (focus)="openCombo()" (keydown)="closeCombo($event);" #input>
+    <div class="selectedCont" [ngClass]="{open: !hideOptions, invalid : (datamodel.invalid && continued)}" (click)="fnCombo()">
+        <label [ngClass]="{smallLabel:small}">{{ selected.Desc }}</label>
+        <div class="arrow down pull-right" [ngClass]="{up : !hideOptions}" *ngIf="!disabled && !readonly"></div>
+    </div>
+    <ul class="selectOptions" *ngIf="!hideOptions" #list>
+        <li *ngFor="let option of options; let i = index;" (click)="selectOption(option);"  [ngClass]="{'hover' : i == hoverOption}">
+            <span>{{option.Desc}}</span>
+        </li>
+    </ul>
+</div>
+<div class="lockedCont" [ngClass]="{smallLeft:small}" *ngIf="disabled || readonly"><img src="assets/img/Lock.png"></div>
+<div class="errorCont" *ngIf="datamodel.invalid && continued">
+    <div class="crossCont"><span>x</span></div>
+    <span>Selecciona una opción.</span>
+</div>

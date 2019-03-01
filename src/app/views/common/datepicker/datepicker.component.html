@@ -1,0 +1,30 @@
+
+
+<div class="input-container">
+  <input class="dateinput" [(ngModel)]="datevalue" name="date" maxlength="10" placeholder="DD/MM/AAAA" type="text" (click)="CalendarShowHide()"  (blur)="checkZone()" />
+  <img src="assets/img/Calendar.svg" class="calendar-icon">  
+</div>
+
+
+
+
+<div class="calendar" [hidden]="!showcalendar" (blur)="checkZone()" tabindex="0" (mouseenter)="enterZone()" (mouseleave)="leaveZone()" >
+  <div class="header">
+    <i class="fa fa-angle-left" (click)="previous()"></i>
+    <span>{{month.format("MMMM YYYY")}}</span>
+    <i class="fa fa-angle-right" (click)="next()"></i>
+  </div>
+  <div class="week names">
+    <span class="">D</span>
+    <span class="">L</span>
+    <span class="">M</span>
+    <span class="">M</span>
+    <span class="">J</span>
+    <span class="">V</span>
+    <span class="">S</span>
+  </div>
+  <div class="week" *ngFor="let week of weeks">
+    <span class="day" [ngClass]="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }"
+      (click)="select(day)" *ngFor="let day of week.days">{{day.number}}</span>
+  </div>
+</div>

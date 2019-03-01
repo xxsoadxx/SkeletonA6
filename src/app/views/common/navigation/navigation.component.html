@@ -1,0 +1,41 @@
+<div class="navigation-container" [ngClass]="{'navigation-show': ScopeService.scope.showMenu}">
+  <ng-scrollbar #scrollbars barClass="scroll-bar" thumbClass="scroll-thumbs" [overlay]="false">
+   
+<!-- ejemplos 
+  
+  [ngClass]="{'result-box-selected': item.Instancia === ScopeService.scope.itemSelected.Instancia}"
+  
+  ngFor="let item of ScopeService.scope.formSol | grdFilter: {text: searchText , states: { PENDING: filters.PENDING , PARTIAL_COMPLETED: filters.PARTIAL_COMPLETED , COMPLETED: filters.COMPLETED , REJECTED: filters.REJECTED , ACEPTED: filters.ACEPTED }}" 
+ 
+  (click)="select(item)"
+
+  (mouseenter)="enterButton()" (mouseleave)="leaveButton()"
+
+  *ngIf="filters.PENDING"
+  
+   (blur)="blurFilter()"
+
+   puntos de menu con navegacion
+
+    <li class="no-active" routerLink="home" skipLocationChange [routerLinkActive]="['active']" (click)="closeMenu()">
+          <a routerLink="home" skipLocationChange><img src="./assets/img/home.svg" class="menu-icon svg"><span>Posición
+              Consolidada</span></a>
+        </li>
+        <li class="no-active" routerLink="step2" skipLocationChange [routerLinkActive]="['active']" (click)="closeMenu()">
+          <a routerLink="step2" skipLocationChange><img src="./assets/img/home.svg" class="menu-icon svg"><span>Posición
+              Consolidada</span></a>
+        </li>
+
+
+-->
+
+<li class="no-active" routerLink="home" skipLocationChange [routerLinkActive]="['active']" (click)="closeMenu()">
+  <a routerLink="home" skipLocationChange><img src="./assets/img/home.svg" class="menu-icon svg"><span>Home</span></a>
+</li>
+<li class="no-active" routerLink="pantalla2" skipLocationChange [routerLinkActive]="['active']" (click)="closeMenu()">
+  <a routerLink="step2" skipLocationChange><img src="./assets/img/home.svg" class="menu-icon svg"><span>Pantalla2</span></a>
+</li>
+
+  </ng-scrollbar>
+</div>
+
