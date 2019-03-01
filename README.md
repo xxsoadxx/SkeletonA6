@@ -1,1 +1,3 @@
-# BackOffice HSBC by Canales
+# Skeleton Angular 6
+npm i
+npm start
